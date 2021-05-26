@@ -1,57 +1,172 @@
 /*---------------HEADER----------------*/
+@font-face {
+    font-family: Monserrat-Black;
+    src: url(Fonts/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Monserrat-Medium;
+    src: url(Fonts/Montserrat-Medium.ttf);
+}
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background: #1D1D1B;
 }
 .header {
-    position: relative;    
-}
-.header img{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 7%;
-    height: auto; 
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
 }
 .header ul{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
     list-style-type: none;
-    margin: 30px;
     padding: 0;
     overflow: hidden;
+    align-items: center;
+    height: 60px;
+}
+.header img{
+    width: 110px;
+    height: auto; 
 }
 .header li a {
+    font-family: Monserrat-Medium;
     display: block;
     color: white;
     text-align: center;
     padding: 12px;
+    margin: 30px;;
     text-decoration: none;
-    opacity: 50%;
+    opacity: 70%;
 }
-.circle {
+.vl{
+    border-left: 2px solid white;
+    opacity: 40%;
+    height: 40px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.center{
+    position: relative;
+    height: 500px;
+}
+
+.center span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    height: 500px;
+    width: 500px;
+    background: linear-gradient( -45deg,#b99ac8,#b99ac8,#abdcf5,#ec2f5d,#6adff6,#ff5297,#4a5197,#2dced9,#efc62d,#fc6586,#53bbfd,#fba2cc,#b216d5,#f62c7d,#f62c7d);
+    background-size: 3000% 3000%;
+    animation: gradient 60s infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -1;
+}
+#primero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -140%);
+    font-family: Monserrat-Black;
+    font-size: 350%;
+    color: white;
+}
+#segundo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-24%, -40%);
+    font-family: Monserrat-Black;
+    font-size: 350%;
+    color: white;
+}
+.hl{
+    position: absolute;
+    bottom: 10%;
+    right: 0px;
+    transform: translate(0%, -700%);
+    border-top: 4px solid #8E47D0;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 55%;
+
+}
+#tercero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-22%, 380%);
+    font-family: Monserrat-Black;
+    font-size: 150%;
+    color: white;
+}
+#cuarto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(105%, 600%);
+    font-family: Monserrat-Medium;
+    font-size: 150%;
+    color: white;
+}
+::marker{
+    font-size: 0;
+}
+.buttonFlecha{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1380%, 348%);
+}
+.buttonFlecha img{
     height: 50px;
-    width: 50px;
-    background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
 }
-.header #primero{
-    font-size: 200%;
-    font-weight: bold;
-    position: absolute;
-    color: white;
-    top: 450px;
-    left: 5%;
+
+@media only screen and (max-width: 1366px) {
+    .center span {
+        transform: translate(-90%, -60%);
+        height: 400px;
+        width: 400px;
+    }
+    #primero{
+        transform: translate(-48%, -250%);
+    }
+    #segundo{
+        transform: translate(-24%, -160%);
+    }
+    #tercero {
+        transform: translate(-22%, 100%);
+    }
+    .hl{
+        transform: translate(0%, -2500%);
+    }
+    #cuarto {
+        transform: translate(70%, 325%);
+    }
+    .buttonFlecha{
+        transform: translate(1150%, 200%);
+    }
+    
 }
-.header #segundo{
-    font-size: 200%;
-    font-weight: bold;
-    position: absolute;
-    color: white;
-    top: 525px;
-    left: 5%;
-}
+
