@@ -1,0 +1,397 @@
+@font-face {
+    font-family: Monserrat-Black;
+    src: url(../Fonts/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Monserrat-BoldItalic;
+    src: url(../Fonts/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Monserrat-Regular;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Monserrat-Medium;
+    src: url(../Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Monserrat-SemiBold;
+    src: url(../Fonts/Montserrat-SemiBold.ttf);
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient( #8dd1cb , #fba2cc);
+  color: #cdcdcd;
+  font-family: Monserrat-Black;
+  max-width: 100%;
+    overflow-x: hidden;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #616161;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/*-------------------------------------*/
+.slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 15%;
+}
+.fondoRosado{
+    position: absolute;
+    background-color: #eecac6;
+    width: 100%;
+    height: 250px;
+
+}
+.backgroundSlider{
+    background-color: #e9e9e9;
+    padding: 4% 10% 4% 10%;
+    width: 50%;
+    height: 40%;
+}
+/* Slideshow container */
+.slideshow-container {
+    margin: 100px;
+    height: auto;
+    width: 100%;
+    color: white;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.cuerpo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.cuerpo img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cuerpo h1{
+    position: absolute;
+    color: black;
+    font-size: 250%;
+    margin: 0px;
+    top: 88%;
+    left: 25%;
+}
+.hl{
+    position: absolute;
+    bottom: -5%;
+    right: 0px;
+    transform: translate(0%, -700%);
+    border-top: 4px solid #8E47D0;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 75%;
+}
+.cuadradoRosaTexto{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    bottom: -22%;
+    background-color: #eecac6;
+    width: 40%;
+    height: 250px;
+}
+
+.cuadradoRosaTexto h2{
+    margin-top:10% ;
+    font-family: Monserrat-BoldItalic;
+    color: #1d1d1b;
+}
+.cuadradoRosaTexto h3{
+    font-family: Monserrat-Regular;
+    text-align: center;
+    font-size: 100%;
+    color: #1d1d1b;
+    width: 80%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:#1d1d1b;
+    width: 100%;
+    font-family: Monserrat-Medium;
+}
+footer p{
+    margin: 1% 0px 0px 0px;
+    font-size: 100%;
+}
+#primero{
+    margin: 3% 0px 0px 0px;
+    font-family:Monserrat-SemiBold;
+}
+#segundo{
+    font-family:Monserrat-SemiBold;
+}
+.hlFooter{
+    border-top: 4px solid #8E47D0;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 10px;
+    padding: 0px;
+    width: 85%;
+}
+.contactoFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.contactoFooter ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style:none
+}
+.contactoFooter img{
+    margin-left:25% ;
+    width: 50%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 1366px){
+    .cuadradoRosaTexto{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        bottom: -35%;
+        background-color: #eecac6;
+        width: 40%;
+        height: 250px;
+    }
+}

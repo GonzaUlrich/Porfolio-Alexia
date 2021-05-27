@@ -108,10 +108,11 @@ body{
     height: 100vh;
     flex: 1 1 auto;
     transition: 0.3s;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .thirdImage a{
-    height: 53vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +122,7 @@ body{
     width: auto ;
 }
 .thirdImage:hover{
-    flex: 5 1 auto;
+    flex: 4 1 auto;
 }
 .thirdImage:hover .hide{
     
