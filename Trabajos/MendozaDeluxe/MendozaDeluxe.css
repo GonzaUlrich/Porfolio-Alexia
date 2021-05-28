@@ -1,6 +1,22 @@
 @font-face {
-    font-family: Monserrat-Black;
-    src: url(../../Fonts/Montserrat-Black.ttf);
+  font-family: Monserrat-Black;
+  src: url(../../Fonts/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Monserrat-BoldItalic;
+  src: url(../../Fonts/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Monserrat-Regular;
+  src: url(../../Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Monserrat-Medium;
+  src: url(../../Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Monserrat-SemiBold;
+  src: url(../../Fonts/Montserrat-SemiBold.ttf);
 }
 body
 {
@@ -246,4 +262,8 @@ footer p{
   margin-left:25% ;
   width: 50%;
   height: auto;
+}
+a { 
+  color: inherit; 
+  text-decoration: none;
 }
