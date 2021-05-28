@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Monserrat-Black;
+    src: url(../../Fonts/Montserrat-Black.ttf);
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient( #e2cacc , #e9bc8f);
+  color: #cdcdcd;
+  font-family: Monserrat-Black;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.navigation{
+  height: 0px;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #616161;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*----------------------*/
+
+.topHeader{
+  position: relative;
+}
+.topHeader img{
+  position:absolute;
+  width: 30%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.topHeader h1{
+  position: absolute;
+  color: black;
+  font-size: 350%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, 100%);
+}
+.body{
+  margin-top: 45%;
+  margin-left: 20%;
+
+  width: 60vw;
+  height: auto;
+}
+.body img{
+  width: 100%;
+  height: auto;
+}
+.horizontalLine{
+  position: absolute;
+  top: 14%;
+  left: 0%;
+  border-top: 4px solid #a87973;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 45%;
+  padding: 0px;
+  width: 55%;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color:#1d1d1b;
+  width: 100%;
+  font-family: Monserrat-Medium;
+}
+footer p{
+  margin: 1% 0px 0px 0px;
+  font-size: 100%;
+}
+#primero{
+  margin: 3% 0px 0px 0px;
+  font-family:Monserrat-SemiBold;
+}
+#segundo{
+  font-family:Monserrat-SemiBold;
+}
+.hlFooter{
+  border-top: 4px solid #8E47D0;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin: 10px;
+  padding: 0px;
+  width: 85%;
+}
+.contactoFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+.contactoFooter ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style:none
+}
+.contactoFooter img{
+  margin-left:25% ;
+  width: 50%;
+  height: auto;
+}

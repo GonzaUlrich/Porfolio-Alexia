@@ -1,22 +1,22 @@
 @font-face {
     font-family: Monserrat-Black;
-    src: url(../Fonts/Montserrat-Black.ttf);
+    src: url(../../Fonts/Montserrat-Black.ttf);
 }
 @font-face {
     font-family: Monserrat-BoldItalic;
-    src: url(../Fonts/Montserrat-BoldItalic.ttf);
+    src: url(../../Fonts/Montserrat-BoldItalic.ttf);
 }
 @font-face {
     font-family: Monserrat-Regular;
-    src: url(../Fonts/Montserrat-Regular.ttf);
+    src: url(../../Fonts/Montserrat-Regular.ttf);
 }
 @font-face {
     font-family: Monserrat-Medium;
-    src: url(../Fonts/Montserrat-Medium.ttf);
+    src: url(../../Fonts/Montserrat-Medium.ttf);
 }
 @font-face {
     font-family: Monserrat-SemiBold;
-    src: url(../Fonts/Montserrat-SemiBold.ttf);
+    src: url(../../Fonts/Montserrat-SemiBold.ttf);
 }
 body
 {
@@ -26,7 +26,7 @@ body
   color: #cdcdcd;
   font-family: Monserrat-Black;
   max-width: 100%;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 #menuToggle
