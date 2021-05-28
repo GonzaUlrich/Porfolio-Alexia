@@ -165,6 +165,7 @@
 {
   transform: none;
 }
+/*----------*/
 .margenTop{
     height: 100px;
 }
@@ -232,5 +233,30 @@ a {
 }
 
 @media only screen and (max-width: 1366px) {
-    
+    .margenTop{
+        height: 0px;
+    }
+    h1{
+        margin-left: 40%;
+        font-size: 180%;
+    }
+    .backgroundSquare{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background-color: #eecac6;
+        height: 250px ;
+    }
+    .backgroundSquare span {
+        height: 320px;
+        width: 320px;
+    }
+    .iconos{
+        height: auto;
+        width: 50%;
+    }
+    h2{
+        font-size: 120%;
+    }
 }
