@@ -6,142 +6,220 @@
     font-family: Monserrat-Regular;
     src: url(../Fonts/Montserrat-Regular.ttf);
 }
-::marker{
-    font-size: 0;
-}
-h1{
-    margin-top: 10%;
-    font-family: Monserrat-Black;
-}
-h2{
-    margin-bottom: 10%;
-    font-family: Monserrat-Regular;
-}
-body{
+
+body, html {
     margin: 0;
-    padding: 0;
-}
-.hide{
-    display: none;
-}
-.descripcion{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 90%;
-}
-.flexboxHover{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
-}
-.firstImage{
-    background-color: #8dd1cb;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    flex: 1 1 auto;
-    transition: 0.3s;
-}
-.firstImage a{
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.firstImage img{
+    overflow: hidden;
+    font-family: Monserrat-Black;
+    background-color: #B99AC8;
+  }
+  
+  .gallery {
+    overflow: hidden;
     height: 100%;
-    width: auto;
-}
-.firstImage:hover{
-    flex: 5 1 auto;
-}
-.firstImage:hover .hide{
+    width: 100%;
     display: block;
-}
-.secondImage{
-    background-color: #e2cacc;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    flex: 1 1 auto;
-    transition: 0.3s;
-    
-}
-.secondImage a{
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.secondImage img{
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .imgWrap {
+    cursor:pointer;
+    float: left;
+    width: 20%;
     height: 100%;
-    width: auto;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+  }
+  .imgWrap:last-child {
+    float: left;
+  }
+  
+  .current {
+    width: 36%;
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+         -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .notCurrent {
+    width: 16%;
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+         -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+.navigation{
+  height: 0px;
 }
-.secondImage:hover{
-    flex: 5 1 auto;
-}
-.secondImage:hover .hide{
-    
-    display: block;
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.thirdImage{
-    background-color: #e9dc8f;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    flex: 1 1 auto;
-    transition: 0.3s;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.thirdImage a{
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.thirdImage img{
-    height: 100%;
-    width: auto ;
-}
-.thirdImage:hover{
-    flex: 4 1 auto;
-}
-.thirdImage:hover .hide{
-    
-    display: block;
-}
-.degrade1{
-    background-image: linear-gradient(to right, #8dd1cb , #e2cacc);
-    height: 100vh;
-    width: 30px;
-}
-.degrade2{
-    background-image: linear-gradient(to right, #e2cacc , #e9dc8f);
-    height: 100vh;
-    width: 30px;
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
 }
 
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
 
 /*
-8dd1cb
-e2cacc
-e9dc8f
-*/
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #616161;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+h1{
+  font-size: 170%;
+  margin-top: 9vh ;
+}
+
+h2{
+  visibility: hidden;
+  font-family:Monserrat-Regular ;
+  font-size: 130%;
+}
+
+.current h2{
+  margin-top: 75vh ;
+  visibility: visible;
+}
+
+.notCurrent h2{
+  visibility: hidden;
+}

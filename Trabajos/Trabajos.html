@@ -5,30 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajos</title>
+    <link rel="stylesheet" href="magnific-popup.min.css">
     <link rel="stylesheet" href="Trabajos.css">
 </head>
 <body>
-    <div class="flexboxHover">
-        <div class="firstImage">
-            <h1>Vie Romantique</h1>
-            <a href="VieRomantique/VieRomantique.html"><img src="Image/VieRompantique.png" alt="VieRompantique"> </a>
-            <div class="descripcion"><h2 class="hide">Mapa recorrido de la identidad barrial</h2></div>
-       </div>
-        <div class="degrade1"></div>
+    <nav class="navigation" role="navigation">
+        <div id="menuToggle">
 
-        <div class="secondImage">
-            <h1>Mendoza Deluxe</h1>
-            <a href="MendozaDeluxe/MendozaDeluxe.html"><img src="Image/MedonzaDelux.png" alt="MedonzaDelux"></a>
-            <div class="descripcion"><h2 class="hide">Sistema para envento edición especial</h2></div>
-        </div>
-        <div class="degrade2"></div>
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
 
-        <div class="thirdImage">
-            <h1>ECA</h1>
-            <a href="ECA/ECA.html"><img src="Image/Eca.png" alt="Eca"></a>
-            <div class="descripcion"><h2 class="hide">Sistema para talleres en centro cultural</h2></div>
-            
+          <ul id="menu">
+            <a href="../../index.html"><li>Inicio</li></a>
+            <a href="Trabajos.html"><li>Trabajos</li></a>
+            <a href="../../SobreMi/SobreMi.html"><li>Sobre mi</li></a>
+            <a href="../../Contacto/Contacto.html"><li>Contacto</li></a>
+          </ul>
         </div>
-    </div>
+      </nav>
+
+    <div class="gallery">
+        <div class="imgWrap imgWrap1" style="background-image:url(Image/VieRomantique.jpg); ">
+          <h1>VieRomantique </h1>
+          <h2 id="hiddenText">Mapa de recorrido de identidad barrial</h2>
+        </div>
+        <div class="imgWrap imgWrap2" style="background-image:url(Image/MendozaDeluxe.jpg);">
+          <h1>Mendoza Deluxe</h1>
+          <h2 id="hiddenText">Sistema para evento edicion especial</h2>
+        </div>
+        <div class="imgWrap imgWrap3" style="background-image:url(Image/Eca.jpg);">
+          <h1>ECA</h1>
+          <h2 id="hiddenText">Sistema para talleres en centro cultural</h2>
+        </div>
+        <div class="imgWrap imgWrap4" style="background-image:url(Image/MStreetBar.jpg);">
+          <h1>MStreetBar</h1>
+          <h2 id="hiddenText">Diseño de posteos para bar de vino</h2>
+        </div>
+        <div class="imgWrap imgWrap5" style="background-image:url(Image/Bohemia.jpg);">
+          <h1>Bohemia</h1>
+          <h2 id="hiddenText">Identidad para casa de pijamas</h2>
+        </div>
+     </div>
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.transit.min.js"></script>
+    <script src="jquery.magnific-popup.min.js"></script>
+    <script src="Trabajos.js"></script>
 </body>
 </html>
