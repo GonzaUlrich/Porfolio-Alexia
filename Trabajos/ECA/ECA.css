@@ -179,11 +179,9 @@ body
 }
 
 .imageBackground{
-    background-color: #e2cacc;
     position: absolute;
     top: 0%;
     left: 15%;
-    transform: translate(0%,-4%);
     width: 50vh;
     height: auto;
     z-index: 1;
@@ -193,37 +191,40 @@ body
     width: 80%;
     height: auto;
     margin-left: 12%;
+    margin-top: 5%;
 }
 .textoTesis{
+  
     position: absolute;
+    font-size: 130%;
     top: 0%;
-    left: 38%;
-    transform: translate(0%,100%);
+    left: 56%;
+    transform: translate(0%,70%);
     z-index: 2;
 }
 .textoTesis h1{
     color: black;
+    margin: 0;
 }
 .cuadradoFondoGris{
-    position: absolute;
-    top: 50%;
-    transform: translate(0%,50%);
+    
     height: 380px;
-    background-color: #d6ccc5;
     opacity: 75%;
     font-family: Monserrat-Regular;
 }
 .cuadradoFondoGrisTexto{
-    margin-left: 60%;
-    margin-right: 10%;
-    margin-top: 2%;
+    width: 22vw;
+    position: absolute;
+    top: 53%;
+    left:56%;
+    transform: translate(0%,0%);
 }
 .cuadradoFondoGrisTexto h2{
     color: black;
-    font-size: 120%;
+    font-size: 70%;
 }
 .imagenCuerpo{
-    margin-top: 42%;
+    margin-top: 22%;
     width: 100vw;
     height: auto;
 }
@@ -232,6 +233,49 @@ body
     height: auto;
     margin-left: 10%;
 }
+
+.horizontalLine{
+  position: absolute;
+  top: -110%;
+  left: 0%;
+  border-top: 4px solid #a87973;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 45%;
+  padding: 0px;
+  width: 500%;
+}
+a { 
+  color: inherit; 
+  text-decoration: none;
+}
+.recursosGraficos{
+  position: absolute;
+    top: 113%;
+    left:56%;
+    transform: translate(0%,0%);
+}
+.recursosGraficos p{
+    color: black;
+    font-size: 150%;
+}
+
+.pelotita{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 135%;
+  left: 56%;
+}
+.pelotita img{
+  margin: 0;
+  margin-right: 5%;
+  width: 6vw;
+  height: auto;
+}
+
+/*----------------------*/
 
 footer{
     display: flex;
@@ -281,22 +325,7 @@ footer p{
     width: 50%;
     height: auto;
 }
-.horizontalLine{
-    position: absolute;
-    top: 1%;
-    left: 0%;
-    border-top: 4px solid #a87973;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    margin-top: 45%;
-    padding: 0px;
-    width: 75%;
-  }
-  a { 
-    color: inherit; 
-    text-decoration: none;
-}
+
 
 .videoPlay{
   display: flex;

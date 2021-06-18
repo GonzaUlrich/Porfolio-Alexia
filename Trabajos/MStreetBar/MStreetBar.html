@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MStreetBar</title>
     <link rel="stylesheet" href="MStreetBar.css">
+
 </head>
 <body>
     <nav role="navigation">
@@ -27,72 +26,88 @@
       </nav>
 
       <div class= "cuerpo">
-        <img src="Images/MSteetBar.png" alt="VieRomantique">
-        <h1>M Street Bar</h1>
+        <img src="Images/MSteetBar.png" alt="MSteetBar">
+        <h1>M STREET BAR</h1>
         <hr class="hl">
       </div>
 
-      <div class="slider-wrap">
-        <div id="card-slider" class="slider">
-          <div class="slider-item">
-              <div class="animation-card_image">
-                  <img src="Images/MStreet1.jpg" alt="">
+
+      <br><br><br><br>
+<div class="slider">
+    <div class="backgroundSlider">
+        
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="Images/MStreet1.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="Images/MStreet2.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="Images/MStreet3.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="Images/MStreet4.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="Images/MStreet5.jpg" style="width:100%">
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
               </div>
           </div>
-          <div class="slider-item">
-              <div class="animation-card_image">
-                  <img src="Images/MStreet2.jpg" alt="">
-              </div>
-          </div>
-          <div class="slider-item">
-              <div class="animation-card_image">
-                  <img src="Images/MStreet3.jpg" alt="">
-              </div>
-          </div>
-          <div class="slider-item">
-              <div class="animation-card_image">
-                  <img src="Images/MStreet4.jpg" alt="">
-              </div>
-          </div>
-          <div class="slider-item">
-              <div class="animation-card_image">
-                  <img src="Images/MStreet5.jpg" alt="">
-              </div>
-          </div>
-          <div class="slider-item">
-            <div class="animation-card_image">
-                <img src="Images/MStreet6.jpg" alt="">
-            </div>
-        </div>
+    </div>
+    <div class="cuadradoRosaTexto">
+        <h2>Music & Wine</h2>
+        <h3> Estos posteos se realizaron en el marco del ciclo de Music & Wine, se realizaba una vez por semana y había que realizar un posteo y una historia por fecha. Cada uno debia tener una fotografía relacionada a la música y tener una misma estructura que variaba solo en cuanto a la ubicación del texto deacuerdo con la estructura que nos proponia la imagen</h3>
+    </div>
+
+</div>
+
+<script src="MStreetBar.js"></script>
+
+  <footer class="foot">
+      <p id="primero">SI TE GUSTA Y QUERES QUE TRABAJEMOS</p>
+      <p id="segundo">JUNTOS, CONTACTAME!</p>
+      <hr class="hlFooter">
+      <div class="contactoFooter">
+          <ul>
+              <li><img src="../Image/icono telefono.png" alt="iconoTelefono"></li>
+              <br>
+              <li>15 4051 8842</li>
+          </ul>
+          <ul>
+            <li><img src="../Image/icono mail.png" alt="iconoMail"></li>
+            <br>
+            <li>alexiadelonc@gmail.com</li>
+          </ul>
+          <ul>
+            <li><img src="../Image/Icono instagram.png" alt="iconoInstagram"></li>
+            <br>
+            <a href="https://www.instagram.com/alexiadelonc.dg/"><li>alexiadelonc.dg</li></a>
+          </ul>
       </div>
-      </div>  
+  </footer>
+  
 
-
-      <footer class="foot">
-        <p id="primero">SI TE GUSTA Y QUERES QUE TRABAJEMOS</p>
-        <p id="segundo">JUNTOS, CONTACTAME!</p>
-        <hr class="hlFooter">
-        <div class="contactoFooter">
-            <ul>
-                <li><img src="../Image/icono telefono.png" alt="iconoTelefono"></li>
-                <br>
-                <li>15 4051 8842</li>
-            </ul>
-            <ul>
-              <li><img src="../Image/icono mail.png" alt="iconoMail"></li>
-              <br>
-              <li>alexiadelonc@gmail.com</li>
-            </ul>
-            <ul>
-              <li><img src="../Image/Icono instagram.png" alt="iconoInstagram"></li>
-              <br>
-              <a href="https://www.instagram.com/alexiadelonc.dg/"><li>alexiadelonc.dg</li></a>
-            </ul>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
-    <script src="MStreetBar.js"></script>
-
+  <script src="VieRomantique.js"></script>
 </body>
 </html>

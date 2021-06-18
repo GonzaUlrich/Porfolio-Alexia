@@ -171,6 +171,8 @@ body
   transform: none;
 }
 
+
+
 /*----------------------*/
 
 .topHeader{
@@ -203,9 +205,15 @@ body
   width: 100%;
   height: auto;
 }
+.texto{
+  color: #1b1b1b;
+  margin-bottom: 10%;
+  margin-top: 80%;
+  width: 50%;
+}
 .horizontalLine{
   position: absolute;
-  top: 14%;
+  top: 19%;
   left: 0%;
   border-top: 4px solid #a87973;
   border-bottom: 0px;
@@ -215,6 +223,98 @@ body
   padding: 0px;
   width: 55%;
 }
+
+
+.images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 3%;;
+}
+.playfairDisplay{
+  width: 70%;
+  height: auto;
+}
+.grandes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: 2s;
+}
+.grandes img{
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  display: block;
+}
+.peques{
+  display: flex;
+  flex-direction: column;
+
+}
+.peques img{
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+  margin-right: 2%;
+  display: block;
+}
+.grupoDe2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imageText{
+  width: 27.5vw;
+}
+.grupoDe2 p{
+  font-family: Monserrat-Regular;
+  padding: 10%;
+  margin-top: 10%;
+  color: #4c403a;
+}
+.container {
+  position: relative;
+  width: 40vw;
+  height: auto;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
+.containerPeques{
+  position: relative;
+  width: 26.7vw;
+  height: auto;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.containerPeques:hover .overlay {
+  opacity: 1;
+}
+
 footer{
   display: flex;
   flex-direction: column;
@@ -266,4 +366,15 @@ footer p{
 a { 
   color: inherit; 
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1366px){
+  .texto{
+
+    font-size: 130%;
+  }
+  .grupoDe2 p{
+    font-size: 70%;
+  }
+
 }

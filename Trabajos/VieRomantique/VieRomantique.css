@@ -175,7 +175,7 @@ transform: none;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  margin-bottom: 12%;
+
 }
 .fondoRosado{
   position: absolute;
@@ -185,7 +185,7 @@ transform: none;
 
 }
 .backgroundSlider{
-  background-color: #e9e9e9;
+
   padding: 4% 10% 4% 10%;
   width: 50%;
   height: 40%;
@@ -309,28 +309,28 @@ margin-right: auto;
   width: 75%;
 }
 .cuadradoRosaTexto{
-  position: absolute;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  bottom: -22%;
-  background-color: #eecac6;
-  width: 40%;
-  height: 250px;
+  
 }
 
 .cuadradoRosaTexto h2{
-  margin-top:10% ;
+  margin-top:4% ;
+  
   font-family: Monserrat-BoldItalic;
   color: #1d1d1b;
+  font-size: 250%;
 }
 .cuadradoRosaTexto h3{
   font-family: Monserrat-Regular;
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
   font-size: 100%;
   color: #1d1d1b;
-  width: 80%;
+  width: 70%;
 }
 footer{
   display: flex;
@@ -392,19 +392,13 @@ footer p{
 }
 
 @media only screen and (max-width: 1366px){
-  .cuadradoRosaTexto{
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      bottom: -35%;
-      background-color: #eecac6;
-      width: 40%;
-      height: 250px;
+  .cuadradoRosaTexto h2{
+    font-size: 200%;
+    margin-bottom:5% ;
   }
-  .slider{
-    margin-bottom: 17%;
+  .cuadradoRosaTexto h3{
+    font-size: 80%;
+    width: 48%;
   }
 }
 
