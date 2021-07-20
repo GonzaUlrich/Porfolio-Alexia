@@ -24,6 +24,7 @@ body{
     padding: 0;
     background: #1D1D1B;
     color: #cdcdcd;
+    font-family: Monserrat-Medium;
 }
 .header {
     position: relative;
@@ -48,14 +49,15 @@ body{
     height: auto; 
 }
 .header li a {
-    font-family: Monserrat-Medium;
+    
     display: block;
     color: white;
     text-align: center;
     padding: 12px;
-    margin: 30px;;
+    margin: 30px;
     text-decoration: none;
     opacity: 70%;
+    font-size: 70%;
 }
 .vl{
     border-left: 2px solid white;
@@ -74,6 +76,10 @@ body{
 	}
 }
 
+.center{
+  margin-top: 10%;
+}
+
 .centerImage{
     position: relative;
     display: flex;
@@ -83,10 +89,10 @@ body{
 
 #spanBack{
     position: absolute;
-    left: 26%;
+    left: 32%;
     top: 19%;
-    height: 210px;
-    width: 210px;
+    height: 170px;
+    width: 170px;
     background: linear-gradient( -45deg,#b99ac8,#b99ac8,#abdcf5,#ec2f5d,#6adff6,#ff5297,#4a5197,#2dced9,#efc62d,#fc6586,#53bbfd,#fba2cc,#b216d5,#f62c7d,#f62c7d);
     background-size: 3000% 3000%;
     animation: gradient 60s infinite;
@@ -97,24 +103,25 @@ body{
 }
 #spanFront{
     position: absolute;
-    left: 26.4%;
+    left: 32.5%;
     top: 21%;
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
     display: inline-block;
     background-color: #1D1D1B;
 }
 
 .center img{
-    width: 42%;
+    width: 30%;
     height: auto;
     z-index: 2;
 }
 .centerText{
     display: flex;
     justify-content:flex-end ;
-    margin-right: 16.5%;
+    margin-right: 10%;
+    margin-top: 0%;
 }
 .centerHr{
     display: flex;
@@ -122,7 +129,7 @@ body{
 }
 .centerHr hr{
 
-    border-top: 4px solid #8E47D0;
+    border-top: 2px solid #8E47D0;
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -133,15 +140,15 @@ body{
 }
 .centerText p {
     margin: 0;
-    font-family: Monserrat-Black;
-    font-size: 130%;
+    font-family: Monserrat-Regular;
+    font-size: 100%;
     color: white;
 }
 .trabajos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 .trabajos a{
@@ -234,19 +241,19 @@ footer{
         opacity: 70%;
     }
     #spanBack{
-        left: 26%;
-        top: 19%;
-        height: 34vh;
-        width: 34vh;
+        left: 32%;
+        top: 16%;
+        height: 26vh;
+        width: 26vh;
     }
     #spanFront{
-        left: 26.4%;
-        top: 21%;
-        height: 32.5vh;
-        width: 32.5vh;
+        left: 32.4%;
+        top: 18%;
+        height: 24.5vh;
+        width: 24.5vh;
     }
     .centerText{
-        margin-right: 17.6%;
+        margin-right: 20%;
     }
     .centerText p {
         font-size: 90%;

@@ -299,7 +299,7 @@ height: auto;
 }
 .hl{
   position: absolute;
-  bottom: -15%;
+  top: 120%;
   right: 0;
   transform: translate(0%, -700%);
   border-top: 4px solid #8E47D0;
@@ -334,7 +334,7 @@ height: auto;
   color: #1d1d1b;
   width: 70%;
   margin: 0;
-  margin-bottom: 2%;
+  margin-bottom: 8%;
 }
 footer{
   display: flex;
@@ -398,7 +398,7 @@ footer p{
 @media only screen and (max-width: 1366px){
   .cuadradoRosaTexto h2{
     font-size: 200%;
-    margin-bottom:5% ;
+    margin-bottom:2% ;
   }
   .cuadradoRosaTexto h3{
     font-size: 80%;

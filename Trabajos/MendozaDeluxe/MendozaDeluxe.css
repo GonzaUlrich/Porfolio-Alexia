@@ -271,10 +271,11 @@ body
 }
 .grupoDe2 p{
   font-family: Monserrat-Regular;
-  padding: 10%;
-  margin-top: 10%;
+  padding: 0%;
+  margin-top: 5%;
   color: #4c403a;
 }
+
 .container {
   position: relative;
   width: 40vw;
@@ -374,7 +375,8 @@ a {
     font-size: 130%;
   }
   .grupoDe2 p{
-    font-size: 70%;
+    font-size: 65%;
+    text-align: justify;
   }
 
 }
